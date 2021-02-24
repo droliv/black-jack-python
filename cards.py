@@ -31,6 +31,6 @@ class Cards(object):
             for i in range(1, self.qt_hand + 1):
                 self.hand.append(self.cards.pop())
             self.hands.append(self.hand)
-            
-        return self.hands
+  
+        return {'hands': self.hands, 'hill': self.cards}
     
